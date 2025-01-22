@@ -8,7 +8,7 @@
     --main-color: #01B0E5;
     --text-color: #ffffff;
     --bg-color-01: #1E304D;
-    --bg-color-02: #304C7A;
+    --bg-color-02: #0d203e;
     --color-00: #0000001a;
 
     /* extra */
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-02);
     color: var(--text-color);
 }
 
@@ -47,7 +47,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1.1rem;;
-    background-color: var(--color-05);
+    background-color: var(--bg-color-02);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +121,7 @@ section {
 }
 
 .sobre-mim {
-    background-color: var(--bg-color-01);
+    background-color: var(--bg-color-02);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -190,4 +190,60 @@ section {
     color: var(--text-color);
     background-color: var(--main-color);
     border-radius: 3px;
+}
+
+.habilidades {
+    background-color: var(--bg-color-02);
+}
+
+.habilidades h1, .projetos h1, .contato h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.habilidades-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.habilidade-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 22rem;
+    margin-bottom: 1rem;
+}
+
+.habilidades-container .habilidade-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-02);
+    background-color: var(--bg-color-01);
+    transition: 0.5s ease;
+}
+
+.habilidades-container .habilidade-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.04);
+}
+
+.habilidade-box i {
+    font-size: 4.3rem;
+    color: var(--main-color);
+}
+
+.habilidade-box h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.habilidade-box p {
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
