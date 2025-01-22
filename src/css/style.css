@@ -180,16 +180,25 @@ section {
 }
 
 .sobre-mim-content .botao-cv {
-    margin-top: 20px;
+    margin-top: 1.1rem;
 }
 
-.botao-cv .botao {
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 0.4rem;
-    color: var(--text-color);
+.botao {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
     background-color: var(--main-color);
-    border-radius: 3px;
+    border-radius: 0.7rem;
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+}
+
+.botao:hover {
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .habilidades {
@@ -246,4 +255,97 @@ section {
     margin: 0.5rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+}
+
+.projetos {
+    background-color: var(--bg-color-02);
+}
+
+.projetos-container {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.projeto-box {
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.6rem var(--bg-color-01);
+    overflow: hidden;
+    display: flex;
+}
+
+.projeto-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.projeto-box img:hover {
+    transform: scale(1.1);
+}
+
+.projeto-box .projeto-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(30rem);
+    transition: 0.5s ease;
+}
+
+.projeto-box:hover .projeto-layer {
+    transform: translateY(0);
+}
+
+.projeto-layer h2 {
+    font-size: 1.4rem;
+}
+
+.projeto-layer p {
+    font-size: 1rem;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.projeto-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.projeto-layer a i {
+    font-size: 1.2rem;
+    color: var(--bg-color-02);
+}
+
+.contato {
+    background-color: var(--bg-color-02);
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 11rem;
+}
+
+.contato-box a i {
+    font-size: 7rem;
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.contato-box:hover a i {
+    color: var(--main-color);
 }
