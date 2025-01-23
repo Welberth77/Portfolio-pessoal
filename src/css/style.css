@@ -263,6 +263,7 @@ section {
 
 .projetos-container {
     display: grid;
+    grid-template-columns: auto auto;
     gap: 1.2rem;
 }
 
@@ -388,3 +389,379 @@ footer {
     transform: translate(0, -0.65rem) rotate(45deg);
 }
 /* ====== /Menu hamburguer ======*/
+
+/* ===== media queries ===== */
+
+/* Extra small (xs): smartphone (portrait) */
+@media (max-width: 576px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .section {
+        padding: 6rem 2.5rem;
+    }
+
+    .home-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-content h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .sobre-img {
+        display: none;
+    }
+
+    .sobre-mim-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre-mim-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .sobre-mim-content h2 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .informacoes-pessoais {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .informacoes-pessoais h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* Habilidades */
+    .habilidades-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .habilidade-box i {
+        font-size: 4.3rem;
+        color: var(--main-color);
+    }
+    
+    .habilidade-box h2 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    .habilidade-box p {
+        margin: 0.2rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    /* Projetos */
+    .projetos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .projeto-layer h2 {
+        font-size: 1rem;
+    }
+    
+    .projeto-layer p {
+        font-size: 0.7rem;
+        text-align: justify;
+        margin: 0.2rem 0 0;
+    }
+
+    .projeto-layer a {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .projeto-layer a i {
+        font-size: 1rem;
+    }
+
+
+    /* Contato */
+    .contato-container {
+        gap: 2rem;
+        margin-top: 9rem;
+    }
+    
+    header {
+        background-color: var(--color-01);
+    }
+}
+
+/* small (sm): smartphone (landscape) */
+@media (min-width: 576px) {
+    .nav {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    .sobre-mim-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Home */
+    .home-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .sobre-img {
+        display: none;
+    }
+
+    .sobre-mim-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre-mim-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .sobre-mim-content h2 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .informacoes-pessoais {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .informacoes-pessoais h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* Habilidades */
+    .habilidades-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    /* Projetos */
+    .projetos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .projeto-layer h2 {
+        font-size: 1.5rem;
+    }
+    
+    .projeto-layer p {
+        font-size: 1rem;
+        text-align: justify;
+        margin: 0.2rem 0 0.5rem;
+    }
+
+    .projeto-layer a {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .projeto-layer a i {
+        font-size: 1.2rem;
+    }
+
+    /* Contato */
+    .contato-container {
+        gap: 5rem;
+        margin-top: 10rem;
+    }
+
+    header {
+        background-color: var(--color-02);
+    }
+}
+
+/* medium (md): Tablet */
+@media (min-width: 768px) {
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+
+    /* Sobre Mim */
+    .sobre-mim {
+        flex-direction: row;
+    }
+
+    .sobre-img {
+        display: block;
+    }
+
+    .sobre-mim-content {
+        width: 100%;
+        text-align: start;
+    }
+
+    .sobre-mim-content h1 {
+        font-size: 2rem;
+    }
+    
+    .sobre-mim-content h2 {
+        font-size: 1.1rem;
+        margin-top: 0rem;
+    }
+
+    .informacoes-pessoais {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .informacoes-pessoais h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* Habilidades */
+    .habilidade-box h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    header {
+        background-color: var(--color-03);
+    }
+}
+
+/* large (lg): Laptop */
+@media (min-width: 992px) {
+
+    /* Sobre Mim */
+    .sobre-mim {
+        flex-direction: row;
+    }
+
+    .sobre-img {
+        display: block;
+    }
+
+    .sobre-mim-content {
+        width: 100%;
+        text-align: start;
+    }
+
+    .sobre-mim-content h1 {
+        font-size: 2rem;
+    }
+    
+    .sobre-mim-content h2 {
+        font-size: 1rem;
+        margin-top: 0rem;
+    }
+
+    .informacoes-pessoais {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        margin-top: 0.5rem;
+    }
+
+    .informacoes-pessoais h3 {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+    
+    /* Habilidades */   
+    .habilidade-box h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    
+    .habilidade-box h2 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    /* Projetos */
+    .projeto-layer h2 {
+        font-size: 1.6rem;
+    }
+    
+    .projeto-layer p {
+        font-size: 1.2rem;
+    }
+
+    .projeto-layer a {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .projeto-layer a i {
+        font-size: 1.4rem;
+    }
+
+    header {
+        background-color: var(--color-04);
+    }
+}
+
+/* Extra large (xl): Desktop */
+@media (min-width: 1200px) {
+
+    header {
+        background-color: var(--color-05);
+    }
+}
+
+/* ===== /media queries ===== */
