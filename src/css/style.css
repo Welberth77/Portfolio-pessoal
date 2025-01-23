@@ -349,3 +349,42 @@ section {
 .contato-box:hover a i {
     color: var(--main-color);
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: var(--bg-color-02);
+}
+
+
+/* ====== Responsividade ======*/
+/* ====== Menu hamburguer ======*/
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.barra1, .barra2, .barra3 {
+    width: 2rem;
+    height: 0.3rem;
+    background-color: var(--text-color);
+    margin: 0.4rem 0;
+    transition: 0.3s ease;
+}
+
+.change .barra1 {
+    transform: translate(0, 0.65rem) rotate(-45deg);
+}
+
+.change .barra2 {
+    opacity: 0;
+}
+
+.change .barra3 {
+    transform: translate(0, -0.65rem) rotate(45deg);
+}
+/* ====== /Menu hamburguer ======*/
