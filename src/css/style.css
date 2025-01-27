@@ -82,6 +82,7 @@ section {
     border: solid 1px var(--color-02);
 }
 
+/* Home */
 .home {
     display: flex;
     flex-direction: column;
@@ -120,6 +121,7 @@ section {
     color: var(--text-color);
 }
 
+/* Sobre Mim */
 .sobre-mim {
     background-color: var(--bg-color-02);
     display: flex;
@@ -184,6 +186,7 @@ section {
 }
 
 .botao {
+    font-size: 1rem;
     display: inline-block;
     padding: 0.7rem 1.8rem;
     background-color: var(--main-color);
@@ -200,6 +203,8 @@ section {
     color: var(--main-color);
     cursor: pointer;
 }
+
+/* Habilidades */
 
 .habilidades {
     background-color: var(--bg-color-02);
@@ -256,6 +261,8 @@ section {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
+
+/* Projetos */
 
 .projetos {
     background-color: var(--bg-color-02);
@@ -351,6 +358,8 @@ section {
     color: var(--main-color);
 }
 
+/* Rodapé */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -393,10 +402,12 @@ footer {
 /* ===== media queries ===== */
 
 /* Extra small (xs): smartphone (portrait) */
-@media (max-width: 576px) {
+@media (min-width: 0px) {
     .menu-hamburguer {
         display: block;
-    }
+        font-size: 1.2rem;
+        margin: 0.5rem 0
+    } 
 
     .nav {
         display: none;
@@ -404,55 +415,29 @@ footer {
 
     .nav-responsive {
         display: block;
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
     }
 
-    .section {
+    section {
         padding: 6rem 2.5rem;
     }
 
-    .home-img img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .home-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .home-content h2 {
-        font-size: 1.2rem;
+    .home img {
+        max-width: 200px;
+        max-height: 200px;
     }
 
     /* Sobre Mim */
-    .sobre-mim {
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .sobre-img {
+    .sobre-img img {
         display: none;
     }
 
-    .sobre-mim-content {
-        width: 100%;
-        text-align: center;
-    }
-
     .sobre-mim-content h1 {
-        font-size: 1.8rem;
-    }
-    
-    .sobre-mim-content h2 {
-        font-size: 1rem;
-        margin-top: 0.5rem;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .informacoes-pessoais {
-        display: flex;
         flex-direction: column;
-        text-align: justify;
     }
 
     .informacoes-pessoais h3 {
@@ -460,61 +445,57 @@ footer {
         font-weight: 400;
     }
 
-    /* Habilidades */
-    .habilidades-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
+    .sobre-mim-content .botao-cv {
+        text-align: center;
     }
 
-    .habilidade-box i {
-        font-size: 4.3rem;
-        color: var(--main-color);
-    }
-    
-    .habilidade-box h2 {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-    
-    .habilidade-box p {
-        margin: 0.2rem;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
+    /* Habilidades */
+    .habilidades-container {
+        flex-direction: column;
     }
 
     /* Projetos */
     .projetos-container {
         display: flex;
         flex-direction: column;
-        gap: 1.2rem;
+    }
+
+    .projeto-box .projeto-layer {
+        text-align: justify;
+        padding: 0 1rem;
     }
 
     .projeto-layer h2 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .projeto-layer p {
-        font-size: 0.7rem;
-        text-align: justify;
-        margin: 0.2rem 0 0;
+        font-size: 0.8rem;
     }
-
+    
     .projeto-layer a {
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
     
     .projeto-layer a i {
         font-size: 1rem;
     }
 
-
-    /* Contato */
+    /* contato */
     .contato-container {
-        gap: 2rem;
-        margin-top: 9rem;
+        gap: 4rem;
     }
+    
+    .contato-box a i {
+        font-size: 5rem;
+    }
+
+    /* Rodapé */
+    footer p {
+        font-size: 0.8rem;
+    }
+
     
     header {
         background-color: var(--color-01);
@@ -523,102 +504,7 @@ footer {
 
 /* small (sm): smartphone (landscape) */
 @media (min-width: 576px) {
-    .nav {
-        display: none;
-    }
-
-    .menu-hamburguer {
-        display: block;
-    }
-
-    .nav-responsive {
-        display: block;
-    }
-
-    .sobre-mim-content h1 {
-        font-size: 2.2rem;
-    }
-
-    /* Home */
-    .home-img img {
-        width: 250px;
-        height: 250px;
-    }
-
-    /* Sobre Mim */
-    .sobre-mim {
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .sobre-img {
-        display: none;
-    }
-
-    .sobre-mim-content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .sobre-mim-content h1 {
-        font-size: 2.2rem;
-    }
-    
-    .sobre-mim-content h2 {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-
-    .informacoes-pessoais {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-    }
-
-    .informacoes-pessoais h3 {
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
-    /* Habilidades */
-    .habilidades-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    /* Projetos */
-    .projetos-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .projeto-layer h2 {
-        font-size: 1.5rem;
-    }
-    
-    .projeto-layer p {
-        font-size: 1rem;
-        text-align: justify;
-        margin: 0.2rem 0 0.5rem;
-    }
-
-    .projeto-layer a {
-        width: 3rem;
-        height: 3rem;
-    }
-    
-    .projeto-layer a i {
-        font-size: 1.2rem;
-    }
-
-    /* Contato */
-    .contato-container {
-        gap: 5rem;
-        margin-top: 10rem;
-    }
-
+   
     header {
         background-color: var(--color-02);
     }
@@ -626,57 +512,6 @@ footer {
 
 /* medium (md): Tablet */
 @media (min-width: 768px) {
-    .menu-hamburguer {
-        display: none;
-    }
-
-    .nav {
-        display: block;
-    }
-
-    .nav-responsive, .nav-responsive a {
-        display: none;
-    }
-
-    /* Sobre Mim */
-    .sobre-mim {
-        flex-direction: row;
-    }
-
-    .sobre-img {
-        display: block;
-    }
-
-    .sobre-mim-content {
-        width: 100%;
-        text-align: start;
-    }
-
-    .sobre-mim-content h1 {
-        font-size: 2rem;
-    }
-    
-    .sobre-mim-content h2 {
-        font-size: 1.1rem;
-        margin-top: 0rem;
-    }
-
-    .informacoes-pessoais {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-    }
-
-    .informacoes-pessoais h3 {
-        font-size: 1rem;
-        font-weight: 400;
-    }
-
-    /* Habilidades */
-    .habilidade-box h2 {
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
 
     header {
         background-color: var(--color-03);
@@ -685,71 +520,6 @@ footer {
 
 /* large (lg): Laptop */
 @media (min-width: 992px) {
-
-    /* Sobre Mim */
-    .sobre-mim {
-        flex-direction: row;
-    }
-
-    .sobre-img {
-        display: block;
-    }
-
-    .sobre-mim-content {
-        width: 100%;
-        text-align: start;
-    }
-
-    .sobre-mim-content h1 {
-        font-size: 2rem;
-    }
-    
-    .sobre-mim-content h2 {
-        font-size: 1rem;
-        margin-top: 0rem;
-    }
-
-    .informacoes-pessoais {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        margin-top: 0.5rem;
-    }
-
-    .informacoes-pessoais h3 {
-        font-size: 0.9rem;
-        font-weight: 400;
-    }
-    
-    /* Habilidades */   
-    .habilidade-box h2 {
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-
-    
-    .habilidade-box h2 {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-
-    /* Projetos */
-    .projeto-layer h2 {
-        font-size: 1.6rem;
-    }
-    
-    .projeto-layer p {
-        font-size: 1.2rem;
-    }
-
-    .projeto-layer a {
-        width: 4rem;
-        height: 4rem;
-    }
-    
-    .projeto-layer a i {
-        font-size: 1.4rem;
-    }
 
     header {
         background-color: var(--color-04);
