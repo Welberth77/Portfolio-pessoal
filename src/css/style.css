@@ -633,6 +633,20 @@ footer {
 /* large (lg): Laptop */
 @media (min-width: 992px) {
 
+    /* Home */
+    .home img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .home-content h2 {
+        font-size: 1.5rem;
+    }
+    
     header {
         background-color: var(--color-04);
     }
@@ -640,6 +654,92 @@ footer {
 
 /* Extra large (xl): Desktop */
 @media (min-width: 1200px) {
+
+    /* Home */
+    .home img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .home-content h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Sobre Mim */
+    .sobre-img img {
+        display: block;
+    }
+
+    .sobre-mim-content h1 {
+        text-align: start;
+        margin-bottom: 3px;
+    }
+
+    .informacoes-pessoais {
+        flex-direction: row;
+    }
+
+    .informacoes-pessoais h3 {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .sobre-mim-content .botao-cv {
+        text-align: start;
+    }
+
+    /* Habilidades */
+    .habilidades-container {
+        flex-direction: row;
+        margin-top: 6rem;
+    }
+
+    .habilidade-box {
+        min-width: 22rem;
+    }
+
+    /* Projetos */
+    .projetos-container {
+        display: grid;
+        flex-direction: auto auto;
+        margin-top: 2rem;
+    }
+
+    .projeto-box .projeto-layer {
+        text-align: justify;
+        padding: 0 4rem;
+    }
+
+    .projeto-layer h2 {
+        font-size: 1.4rem;
+    }
+    
+    .projeto-layer p {
+        font-size: 1rem;
+    }
+    
+    .projeto-layer a {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .projeto-layer a i {
+        font-size: 1.2rem;
+    }
+
+    /* Contato */
+    .contato-container {
+        gap: 8rem;
+        margin-top: 11rem;
+    }
+    
+    .contato-box a i {
+        font-size: 7rem;
+    }
 
     header {
         background-color: var(--color-05);
