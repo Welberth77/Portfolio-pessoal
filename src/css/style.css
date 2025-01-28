@@ -565,6 +565,65 @@ footer {
 
 /* medium (md): Tablet */
 @media (min-width: 768px) {
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    /* Home */
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .home-content h2 {
+        font-size: 1.7rem;
+    }
+
+    /* Projetos */
+    /* Ajustes iguais ao original */
+    .projeto-layer h2 {
+        font-size: 1.4rem;
+    }
+    
+    .projeto-layer p {
+        font-size: 1rem;
+    }
+
+    .projeto-box .projeto-layer {
+        padding: 0 4rem;
+    }
+
+    .projeto-layer a {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .projeto-layer a i {
+        font-size: 1.2rem;
+    }
+
+    /* contato */
+    .contato-container {
+        gap: 8rem;
+        margin-top: 8rem;
+    }
+    
+    .contato-box a i {
+        font-size: 6rem;
+    }
+
+    /* Rodapé */
+    /* Igual ao original */
+    footer p {
+        font-size: 1rem;
+    }
 
     header {
         background-color: var(--color-03);
