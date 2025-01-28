@@ -705,7 +705,7 @@ footer {
     /* Projetos */
     .projetos-container {
         display: grid;
-        flex-direction: auto auto;
+        grid-template-columns: auto auto;
         margin-top: 2rem;
     }
 
