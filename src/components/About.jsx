@@ -12,13 +12,13 @@ const About = () => {
         {/* Card de Informação com Efeito Hover */}
         <div className="bg-gray-800 p-8 md:p-10 rounded-xl shadow-2xl transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-cyan-400/70 hover:scale-[1.01] border border-gray-700">
           <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            Olá! Sou <strong className="text-cyan-400">Welberth Oliveira</strong>, um Desenvolvedor Full Stack apaixonado por transformar ideias complexas em soluções digitais elegantes e eficientes. Minha jornada na programação começou com projetos pessoais e evoluiu para uma especialização em criar pontes entre o front-end dinâmico e o back-end robusto.
+            Olá! Sou <strong className="text-cyan-400">Welberth Oliveira</strong>, Sou estudante de Ciência da Computação (6º período) e entrei na área de tecnologia porque sempre gostei da ideia de transformar pensamentos e ideias em algo real, acho fascinante criar algo que possa facilitar a vida das pessoas, resolver um problema ou simplesmente tornar o dia de alguém mais prático por meio de um software ou solução digital.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            No <strong className="text-cyan-400">Front-end</strong>, sou proficiente em React e Next.js, com foco em performance e experiência do usuário (UX). No <strong className="text-cyan-400">Back-end</strong>, trabalho principalmente com Node.js (Express), construindo APIs escaláveis e gerenciando bancos de dados SQL e NoSQL.
+            Durante minha jornada, descobri que programar vai muito além de código. Gosto de aprender coisas novas e me desafiar constantemente, cada projeto, mesmo pequeno, sempre me ensina algo.
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Estou sempre em busca de novos desafios e adoro a oportunidade de aplicar o pensamento crítico para otimizar processos e entregar produtos de alto nível. Meu objetivo é simples: construir o futuro, uma linha de código por vez.
+          <p className="text-lg text-gray-300 leading-relaxed mb-4"> 
+            Estou sempre em busca de novos desafios e aberto a conexões.
           </p>
         </div>
       </div>
