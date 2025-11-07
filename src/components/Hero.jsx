@@ -53,7 +53,7 @@ const Hero = () => {
               <img
                 src={fotoPerfil} 
                 alt="Foto de Welberth Oliveira"
-                className="rounded-full w-full h-full object-cover border-4 border-cyan-400 shadow-xl"
+                className="rounded-full w-full h-full object-cover border-4 border-cyan-400 shadow-xl hover:scale-[1.02] hover:shadow-cyan-500/30 transition-all duration-300 ease-in-out hover:shadow-2xl"
               />
             </div>
           </div>
