@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react'; // <-- LINHA ADICIONADA
-import fotoPerfil from '../assets/foto-perfil.jpg';
+import fotoPerfil from '../images/foto-perfil.jpg';
 
 // --- COMPONENTE DO HERO (INÍCIO) ---
 const Hero = () => {
