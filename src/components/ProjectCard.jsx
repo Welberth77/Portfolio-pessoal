@@ -4,7 +4,7 @@ import { Github, ArrowUpRight } from 'lucide-react';
 // --- COMPONENTE DE CARD DE PROJETO ---
 const ProjectCard = ({ title, description, tags, githubUrl, liveUrl, imageUrl }) => {
   return (
-    <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
+    <div className="bg-gray-800 rounded-xl shadow-2xl overflow-hidden flex flex-col mb-6 transition-transform duration-300 hover:scale-[1.02] hover:shadow-cyan-500/30 transition-all duration-300 ease-in-out hover:shadow-2xl">
       {/* Imagem do Projeto */}
       <img 
         src={imageUrl || 'https://placehold.co/600x400/111827/4b5563?text=Meu+Projeto'} 

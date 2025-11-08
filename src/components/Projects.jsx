@@ -1,5 +1,10 @@
-import React from 'react';
-import ProjectCard from './ProjectCard.jsx'; // <-- Caminho atualizado com a extensão .jsx
+import ProjectCard from './ProjectCard.jsx'; 
+import PokeDevImage from "../images/projeto-pokedev.png";
+import BlueWarriorImage from "../images/imagem-blue-warrior.png"
+import CopiaSpotifyImage from '../images/copia-spotify.png'
+import CuidaPetImage from '../images/CuidaPet.png'
+import MeteorFallImage from '../images/MeteorFall.png'
+import OnlinePizzariaImage from '../images/OnlinePizzaria.png'
 
 // --- COMPONENTE "PROJETOS" ---
 const Projects = () => {
@@ -8,9 +13,9 @@ const Projects = () => {
       title: 'MeteorFall',
       description: 'Projeto desenvolvido durante o hackathon NASA Space Apps: criamos um site que simula o impacto de meteoros na Terra usando dados reais da NASA. A aplicação estima danos potenciais, calcula o número de pessoas afetadas com base na densidade populacional e mostra o impacto em qualquer região do planeta.',
       tags: ['React', 'HTML5', 'CSS3'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-1',
-      liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=Projeto+E-commerce'
+      githubUrl: 'https://github.com/GiorgioRafael/SpaceAppsMeteor',
+      liveUrl: 'https://meteorfall.vercel.app',
+      imageUrl: MeteorFallImage
     },
     {
       title: 'Pizzaria Online',
@@ -18,7 +23,7 @@ const Projects = () => {
       tags: ['Python', 'Flask', 'HTML5', 'CSS3', 'Bootstap', 'SQLite', 'Jinja Templates'],
       githubUrl: 'https://github.com/seu-usuario/projeto-1',
       liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=Projeto+E-commerce'
+      imageUrl: OnlinePizzariaImage
     },
     {
       title: 'CuidaPet',
@@ -26,7 +31,7 @@ const Projects = () => {
       tags: ['HTML5', 'CSS3', 'Figma'],
       githubUrl: 'https://github.com/seu-usuario/projeto-1',
       liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=Projeto+E-commerce'
+      imageUrl: CuidaPetImage
     },
     {
       title: 'Cópia Spotify',
@@ -34,7 +39,7 @@ const Projects = () => {
       tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
       githubUrl: 'https://github.com/seu-usuario/projeto-2',
       liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=App+de+Chat'
+      imageUrl: CopiaSpotifyImage
     },
     {
       title: 'Pokedev',
@@ -42,7 +47,7 @@ const Projects = () => {
       tags: ['HTML5', 'CSS3', 'JavaScript'],
       githubUrl: 'https://github.com/seu-usuario/projeto-3',
       liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=Landing+Page'
+      imageUrl: PokeDevImage
     },
     {
       title: 'Blue Warrior',
@@ -50,12 +55,12 @@ const Projects = () => {
       tags: ['Godot Engine', 'GD Script'],
       githubUrl: 'https://github.com/seu-usuario/projeto-3',
       liveUrl: '#',
-      imageUrl: 'https://placehold.co/600x400/1F2937/38BDF8?text=Landing+Page'
+      imageUrl: BlueWarriorImage
     },
   ];
 
   return (
-    <section id="projetos" className="py-20 md:py-32 bg-gray-950">
+    <section id="projetos" className="py-20 md:py-32">
       <div className="container mx-auto max-w-6xl px-6">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
           Meus Projetos
