@@ -13,7 +13,7 @@ const Contact = () => {
           Sinta-se à vontade para me enviar um e-mail!
         </p>
         <a
-          href="mailto:seu-email@gmail.com" // <-- SUBSTITUA SEU EMAIL
+          href="mailto:welbertholiveira250@gmail.com" 
           className="inline-block bg-cyan-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition-all duration-300 hover:bg-cyan-400 hover:shadow-cyan-500/50 transform hover:-translate-y-1"
         >
           Mandar um E-mail

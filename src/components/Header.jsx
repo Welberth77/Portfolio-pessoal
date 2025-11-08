@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
       <div className="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
         {/* Logo ou Nome */}
         <a 
