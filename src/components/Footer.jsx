@@ -8,9 +8,6 @@ const Footer = () => {
         <p>
           &copy; {new Date().getFullYear()} Welberth. Todos os direitos reservados.
         </p>
-        <p className="text-sm mt-2">
-          Feito com <span role="img" aria-label="coração">❤️</span> usando React e Tailwind CSS.
-        </p>
       </div>
     </footer>
   );
