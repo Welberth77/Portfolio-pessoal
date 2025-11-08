@@ -23,40 +23,38 @@ const Projects = () => {
       title: 'Pizzaria Online',
       description: 'Sistema web completo para pedidos de pizza, com integração a banco de dados e exibição do tempo estimado de preparo do pedido. Desenvolvido como projeto final do curso CS50 da Harvard University.',
       tags: ['Python', 'Flask', 'HTML5', 'CSS3', 'Bootstap', 'SQLite', 'Jinja Templates'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-1',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Welberth77/CS50',
       imageUrl: OnlinePizzariaImage
     },
     {
       title: 'CuidaPet',
       description: 'CuidaPet é um site criado com o objetivo de ajudar tutores a organizarem os cuidados com seus pets. Fiquei responsável pelo front-end, usando HTML e CSS, e colaborei no design com o Figma para criar interfaces amigáveis e funcionais.',
       tags: ['HTML5', 'CSS3', 'Figma'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-1',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Welberth77/CuidaPet',
       imageUrl: CuidaPetImage
     },
     {
       title: 'Cópia Spotify',
       description: 'Participei da Imersão Dev da Alura, onde desenvolvi uma cópia simplificada da interface do Spotify utilizando HTML, CSS e JavaScript. O projeto ajudou a reforçar conceitos de front-end e resultou em um layout funcional e responsivo.',
       tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-2',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Welberth77/Spotify-imersao-alura',
+      liveUrl: 'https://welberth77.github.io/Spotify-imersao-alura',
       imageUrl: CopiaSpotifyImage
     },
     {
       title: 'Pokedev',
       description: 'Pokedev é um site interativo com temática de Pokémon, permitindo aos usuários explorar informações sobre os Pokedevs e interagir com conteúdos relacionados. Utilizando HTML, CSS e JavaScript, desenvolvi uma interface responsiva para uma navegação agradável em diferentes dispositivos',
       tags: ['HTML5', 'CSS3', 'JavaScript'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-3',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Welberth77/projeto-pokedevs',
+      liveUrl: 'https://welberth77.github.io/projeto-pokedevs',
       imageUrl: PokeDevImage
     },
     {
       title: 'Blue Warrior',
       description: 'Blue Warrior é um jogo de sobrevivência desenvolvido no Godot com GDScript, onde o jogador controla um guerreiro azul enfrentando ondas de inimigos. Utilizei GDScript e assets prontos no projeto.',
       tags: ['Godot Engine', 'GD Script'],
-      githubUrl: 'https://github.com/seu-usuario/projeto-3',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Welberth77/Godot',
+      liveUrl: 'https://welberth.itch.io/bluewarrior',
       imageUrl: BlueWarriorImage
     },
   ];
