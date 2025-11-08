@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 // --- COMPONENTE DO CABEÇALHO (NAVBAR) ---
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Navegação pelo id das páginas
   const navLinks = [
     { href: '#sobre', label: 'Sobre' },
+    { href: '#skills', label: 'Skills'},
     { href: '#projetos', label: 'Projetos' },
     { href: '#contato', label: 'Contato' },
   ];

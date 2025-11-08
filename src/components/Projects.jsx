@@ -1,4 +1,6 @@
 import ProjectCard from './ProjectCard.jsx'; 
+
+// Imagens
 import PokeDevImage from "../images/projeto-pokedev.png";
 import BlueWarriorImage from "../images/imagem-blue-warrior.png"
 import CopiaSpotifyImage from '../images/copia-spotify.png'
