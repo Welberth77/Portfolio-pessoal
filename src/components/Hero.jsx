@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="headline">Welberth<br />Oliveira</h1>
         <p className="lead">
           Estudante de Ciência da Computação e desenvolvedor focado em transformar ideias
-          em software real — do conceito à interface, com atenção à <strong>experiência de uso</strong>.
+          em software real, do conceito à interface, com atenção à <strong>experiência de uso</strong>.
         </p>
 
         <div className="hero-actions">
@@ -50,7 +50,7 @@ const Hero = () => {
           <div className="avatar-frame">
             <img src={fotoPerfil} alt="Foto de Welberth Oliveira" />
           </div>
-          <span className="avatar-badge">7º período · CC</span>
+          <span className="avatar-badge">8º período · CC</span>
         </div>
       </div>
     </section>

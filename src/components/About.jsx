@@ -7,8 +7,8 @@ const About = () => {
           <p className="kicker">01 — Sobre</p>
           <h2 className="section-title">Quem está por trás do código</h2>
           <div className="facts">
-            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Ciência da Computação · 7º período</div>
-            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Desenvolvimento front-end</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Ciência da Computação · 8º período</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Desenvolvedor full stack</div>
             <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Aberto a novos desafios</div>
           </div>
         </div>
