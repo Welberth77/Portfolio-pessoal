@@ -1,19 +1,17 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-// --- COMPONENTE DO CABEÇALHO (NAVBAR) ---
+// --- CABEÇALHO (NAVBAR) ---
+const navLinks = [
+  { href: '#sobre', label: 'Sobre' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projetos', label: 'Projetos' },
+  { href: '#contato', label: 'Contato' },
+];
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Navegação pelo id das páginas
-  const navLinks = [
-    { href: '#sobre', label: 'Sobre' },
-    { href: '#skills', label: 'Skills'},
-    { href: '#projetos', label: 'Projetos' },
-    { href: '#contato', label: 'Contato' },
-  ];
-
-  // Função para scroll suave
   const handleScroll = (e, href) => {
     e.preventDefault();
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
@@ -21,61 +19,38 @@ const Header = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-950 bg-opacity-80 backdrop-blur-md z-50 shadow-lg">
-      <div className="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
-        {/* Logo ou Nome */}
-        <a 
-          href="#" 
-          onClick={(e) => handleScroll(e, '#home')}
-          className="text-2xl font-bold text-white transition-colors duration-300 hover:text-cyan-400"
-        >
-          Welberth.dev
+    <header className="nav">
+      <div className="nav-inner">
+        <a href="#home" onClick={(e) => handleScroll(e, '#home')} className="logo">
+          <span className="logo-dot" aria-hidden="true"></span>
+          welberth<span className="muted">.dev</span>
         </a>
 
-        {/* Links do Menu Desktop */}
-        <div className="hidden md:flex space-x-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => handleScroll(e, link.href)}
-              className="text-gray-300 font-medium transition-colors duration-300 hover:text-cyan-400"
-            >
+        {/* Links desktop */}
+        <nav className="nav-links">
+          {navLinks.slice(0, 3).map((link) => (
+            <a key={link.label} href={link.href} onClick={(e) => handleScroll(e, link.href)} className="nav-link">
               {link.label}
             </a>
           ))}
-        </div>
+          <a href="#contato" onClick={(e) => handleScroll(e, '#contato')} className="nav-cta">Contato</a>
+        </nav>
 
-        {/* Botão do Menu Mobile */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none"
-            aria-label="Abrir menu"
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
+        {/* Botão mobile */}
+        <button className="nav-burger" onClick={() => setIsOpen(!isOpen)} aria-label="Abrir menu" aria-expanded={isOpen}>
+          {isOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </div>
 
-      {/* Menu Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-gray-800 shadow-xl">
-          <div className="flex flex-col px-6 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                onClick={(e) => handleScroll(e, link.href)}
-                className="text-gray-200 text-lg font-medium text-center transition-colors duration-300 hover:bg-gray-700 p-2 rounded-lg"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-    </nav>
+      {/* Menu mobile */}
+      <div className={`mobile-menu${isOpen ? ' open' : ''}`}>
+        {navLinks.map((link) => (
+          <a key={link.label} href={link.href} onClick={(e) => handleScroll(e, link.href)}>
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </header>
   );
 };
 

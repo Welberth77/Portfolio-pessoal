@@ -1,68 +1,46 @@
-import { Monitor, Server, Database, Settings, Code, Wrench } from 'lucide-react';
+import { Monitor, Server, Database, Wrench } from 'lucide-react';
 
-// --- COMPONENTE HABILIDADES ---
+// --- HABILIDADES ---
+const skillCategories = [
+  {
+    title: 'Front-end',
+    icon: Monitor,
+    skills: ['React', 'JavaScript', 'Tailwind', 'HTML5', 'CSS3', 'Bootstrap', 'Figma'],
+  },
+  {
+    title: 'Back-end',
+    icon: Server,
+    skills: ['Node.js', 'Express', 'Python', 'Flask', 'Java', 'JWT'],
+  },
+  {
+    title: 'Dados',
+    icon: Database,
+    skills: ['PostgreSQL', 'Supabase', 'SQL', 'SQLite'],
+  },
+  {
+    title: 'Ferramentas',
+    icon: Wrench,
+    skills: ['Git', 'Docker', 'Postman', 'Power BI', 'Godot', 'Kanban'],
+  },
+];
+
 const Skills = () => {
-
-  // Definição das categorias e tecnologias (substitua pelas suas!)
-  const skillCategories = [
-    {
-      title: 'Front-end',
-      icon: Monitor,
-      color: 'text-cyan-400',
-      skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Tailwind CSS', 'Bootstrap', 'Figma'],
-    },
-    {
-      title: 'Back-end',
-      icon: Server,
-      color: 'text-pink-400',
-      skills: ['Python', 'Node.js', 'Java', 'Flask'],
-    },
-    {
-      title: 'Banco de Dados',
-      icon: Database,
-      color: 'text-green-400',
-      skills: ['SQL', 'PostgreSQL'],
-    },
-    {
-      title: 'Ferramentas e Outros',
-      icon: Wrench,
-      color: 'text-yellow-400',
-      skills: ['Git', 'GitHub', 'Godot Engine', 'Kanban'],
-    },
-  ];
-
   return (
-    <section id="skills" className="py-20 md:py-32 bg-gray-900">
-      <div className="container mx-auto max-w-6xl px-6">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
-          Minhas Habilidades & Stack
-        </h2>
-        
-        {/* Grid de Categorias */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section id="skills" className="section">
+      <div className="container section-inner">
+        <p className="kicker">02 — Stack</p>
+        <h2 className="section-title mb">Habilidades &amp; ferramentas</h2>
+
+        <div className="skills-grid">
           {skillCategories.map((category) => (
-            <div 
-              key={category.title}
-              className={`bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col items-center text-center 
-                          transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-cyan-500/30 hover:scale-[1.02]`}
-            >
-              {/* Ícone da Categoria */}
-              <category.icon size={36} className={`${category.color} mb-4`} />
-              
-              {/* Título da Categoria */}
-              <h3 className="text-2xl font-semibold text-white mb-6 border-b border-gray-700 w-full pb-2">
-                {category.title}
-              </h3>
-              
-              {/* Badges de Habilidades */}
-              <div className="flex flex-wrap justify-center gap-3">
+            <div key={category.title} className="skill-card">
+              <div className="skill-head">
+                <category.icon size={20} />
+                <h3>{category.title}</h3>
+              </div>
+              <div className="tags">
                 {category.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="bg-gray-700 text-gray-200 text-sm px-4 py-1 rounded-full font-medium transition-colors hover:bg-cyan-600 hover:text-white"
-                  >
-                    {skill}
-                  </span>
+                  <span key={skill} className="tag">{skill}</span>
                 ))}
               </div>
             </div>

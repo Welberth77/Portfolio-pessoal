@@ -1,25 +1,29 @@
-import React from 'react';
-
-// --- COMPONENTE "SOBRE MIM" ---
+// --- SOBRE MIM ---
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-gray-900">
-      <div className="container mx-auto max-w-4xl px-6">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
-          Sobre Mim
-        </h2>
+    <section id="sobre" className="section">
+      <div className="container section-inner about">
+        <div className="about-head">
+          <p className="kicker">01 — Sobre</p>
+          <h2 className="section-title">Quem está por trás do código</h2>
+          <div className="facts">
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Ciência da Computação · 7º período</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Desenvolvimento front-end</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Aberto a novos desafios</div>
+          </div>
+        </div>
 
-        {/* Card de Informação com Efeito Hover */}
-        <div className="bg-gray-800 p-8 md:p-10 rounded-xl shadow-2xl transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-cyan-500/30 hover:scale-[1.01] border border-gray-700">
-          <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            Olá! Sou <strong className="text-cyan-400">Welberth Oliveira</strong>, Sou estudante de Ciência da Computação (7º período) e entrei na área de tecnologia porque sempre gostei da ideia de transformar pensamentos e ideias em algo real, acho fascinante criar algo que possa facilitar a vida das pessoas, resolver um problema ou simplesmente tornar o dia de alguém mais prático por meio de um software ou solução digital.
+        <div className="about-body">
+          <p>
+            Entrei na tecnologia porque sempre gostei de transformar pensamentos e ideias em algo real.
+            Acho fascinante criar software que facilite a vida das pessoas, resolva um problema ou
+            simplesmente torne o dia de alguém mais prático.
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            Durante minha jornada, descobri que programar vai muito além de código. Gosto de aprender coisas novas e me desafiar constantemente, cada projeto, mesmo pequeno, sempre me ensina algo.
+          <p>
+            Durante a jornada, descobri que programar vai muito além do código. Gosto de aprender coisas
+            novas e me desafiar: cada projeto, mesmo pequeno, me ensina algo.
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed mb-4"> 
-            Estou sempre em busca de novos desafios e aberto a conexões.
-          </p>
+          <p>Estou sempre em busca de novos desafios e aberto a novas conexões.</p>
         </div>
       </div>
     </section>

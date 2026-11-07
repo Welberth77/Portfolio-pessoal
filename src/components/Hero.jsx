@@ -1,63 +1,56 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import fotoPerfil from '../images/foto-perfil.jpg';
 
-// --- COMPONENTE DO HERO (INÍCIO) ---
+// --- HERO (INÍCIO) ---
 const Hero = () => {
+  const handleScroll = (e, href) => {
+    e.preventDefault();
+    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-24 md:pt-0">
-      <div className="container mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
-          {/* Coluna de Texto e Links */}
-          <div className="text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold text-white mb-4">
-              Olá, eu sou <span className="text-cyan-400">Welberth Oliveira</span>
-            </h1>
-            <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
-              Desenvolvedor Full Stack
-            </p>
-            
-            {/* Links Sociais */}
-            <div className="flex justify-center md:justify-start space-x-6">
-              <a
-                href="https://github.com/welberth77" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 transition-transform duration-300 hover:text-cyan-400 hover:scale-110"
-                aria-label="GitHub"
-              >
-                <Github size={40} />
-              </a>
-              <a
-                href="https://linkedin.com/in/welberth-oliveira" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 transition-transform duration-300 hover:text-cyan-400 hover:scale-110"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={40} />
-              </a>
-              <a
-                href="mailto:welbertholiveira250@gmail.com" 
-                className="text-gray-400 transition-transform duration-300 hover:text-cyan-400 hover:scale-110"
-                aria-label="Email"
-              >
-                <Mail size={40} />
-              </a>
-            </div>
-          </div>
+    <section id="home" className="container hero">
+      {/* Texto */}
+      <div className="hero-text">
+        <p className="kicker">
+          <span className="kicker-line" aria-hidden="true"></span>
+          Desenvolvedor Full Stack
+        </p>
+        <h1 className="headline">Welberth<br />Oliveira</h1>
+        <p className="lead">
+          Estudante de Ciência da Computação e desenvolvedor focado em transformar ideias
+          em software real — do conceito à interface, com atenção à <strong>experiência de uso</strong>.
+        </p>
 
-          {/* Coluna da Imagem */}
-          <div className="flex justify-center md:justify-end order-first md:order-last">
-            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <img
-                src={fotoPerfil} 
-                alt="Foto de Welberth Oliveira"
-                className="rounded-full w-full h-full object-cover border-4 border-cyan-400 shadow-xl hover:scale-[1.02] hover:shadow-cyan-500/30 transition-all duration-300 ease-in-out hover:shadow-2xl"
-              />
-            </div>
-          </div>
+        <div className="hero-actions">
+          <a href="#projetos" onClick={(e) => handleScroll(e, '#projetos')} className="btn btn-primary">
+            Ver projetos <ArrowRight size={17} />
+          </a>
+          <a href="#contato" onClick={(e) => handleScroll(e, '#contato')} className="btn btn-ghost">
+            Fale comigo
+          </a>
+        </div>
 
+        <div className="socials">
+          <a className="social" href="https://github.com/welberth77" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <Github size={24} />
+          </a>
+          <a className="social" href="https://linkedin.com/in/welberth-oliveira" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Linkedin size={24} />
+          </a>
+          <a className="social" href="mailto:welbertholiveira250@gmail.com" aria-label="E-mail">
+            <Mail size={24} />
+          </a>
+        </div>
+      </div>
+
+      {/* Foto */}
+      <div className="hero-media">
+        <div className="avatar">
+          <div className="avatar-frame">
+            <img src={fotoPerfil} alt="Foto de Welberth Oliveira" />
+          </div>
+          <span className="avatar-badge">7º período · CC</span>
         </div>
       </div>
     </section>

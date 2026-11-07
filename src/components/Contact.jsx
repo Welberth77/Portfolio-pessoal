@@ -1,23 +1,21 @@
-import React from 'react';
+import { Mail } from 'lucide-react';
 
-// --- COMPONENTE "CONTATO" ---
+// --- CONTATO ---
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 md:py-32">
-      <div className="container mx-auto max-w-3xl px-6 text-center">
-        <h2 className="text-4xl font-bold text-white mb-6">
-          Entre em Contato
-        </h2>
-        <p className="text-xl text-gray-300 mb-8">
-          Estou sempre aberto a novas oportunidades e conexões. 
-          Sinta-se à vontade para me enviar um e-mail!
-        </p>
-        <a
-          href="mailto:welbertholiveira250@gmail.com" 
-          className="inline-block bg-cyan-500 text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg transition-all duration-300 hover:bg-cyan-400 hover:shadow-cyan-500/50 transform hover:-translate-y-1"
-        >
-          Mandar um E-mail
-        </a>
+    <section id="contato" className="section">
+      <div className="container section-inner">
+        <div className="contact-card">
+          <p className="kicker">04 — Contato</p>
+          <h2>Vamos construir algo juntos?</h2>
+          <p>
+            Estou sempre aberto a novas oportunidades e conexões.
+            Me manda um e-mail e eu respondo o quanto antes.
+          </p>
+          <a href="mailto:welbertholiveira250@gmail.com" className="contact-btn">
+            <Mail size={19} /> welbertholiveira250@gmail.com
+          </a>
+        </div>
       </div>
     </section>
   );

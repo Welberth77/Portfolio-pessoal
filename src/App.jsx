@@ -10,8 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    // Fonte Inter e tema escuro aplicados globalmente
-    <div className="bg-gray-900 text-white font-sans antialiased">
+    <div className="site">
       <Header />
       <main>
         <Hero />
