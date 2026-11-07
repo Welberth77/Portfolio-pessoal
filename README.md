@@ -1,16 +1,50 @@
-# React + Vite
+# Portfólio Pessoal — Welberth Oliveira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal de página única, desenvolvido com **React + Vite** e estilizado com **Tailwind CSS**. Apresenta minha trajetória, habilidades e projetos como desenvolvedor Full Stack e estudante de Ciência da Computação.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** — biblioteca para a interface
+- **Vite 7** — build e servidor de desenvolvimento
+- **Tailwind CSS 4** — estilização utilitária
+- **lucide-react** — ícones
 
-## React Compiler
+## 📁 Estrutura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── components/
+│   ├── Header.jsx      # Navbar com navegação suave e menu mobile
+│   ├── Hero.jsx        # Apresentação + links sociais
+│   ├── About.jsx       # Seção "Sobre Mim"
+│   ├── Skills.jsx      # Habilidades por categoria
+│   ├── Projects.jsx    # Lista de projetos
+│   ├── ProjectCard.jsx # Card individual de projeto
+│   ├── Contact.jsx     # Chamada para contato
+│   └── Footer.jsx      # Rodapé
+├── images/             # Imagens de perfil e dos projetos
+├── App.jsx             # Composição das seções
+└── main.jsx            # Ponto de entrada
+```
 
-## Expanding the ESLint configuration
+## 🛠️ Como rodar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Instalar dependências
+npm install
+
+# Ambiente de desenvolvimento
+npm run dev
+
+# Build de produção
+npm run build
+
+# Pré-visualizar o build
+npm run preview
+```
+
+## 📬 Contato
+
+- **E-mail:** welbertholiveira250@gmail.com
+- **GitHub:** [@welberth77](https://github.com/welberth77)
+- **LinkedIn:** [welberth-oliveira](https://linkedin.com/in/welberth-oliveira)

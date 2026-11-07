@@ -7,10 +7,18 @@ import CopiaSpotifyImage from '../images/copia-spotify.png'
 import CuidaPetImage from '../images/CuidaPet.png'
 import MeteorFallImage from '../images/MeteorFall.png'
 import OnlinePizzariaImage from '../images/OnlinePizzaria.png'
+import AchadosPerdidosImage from '../images/SistemaAchadosPerdidos.png'
 
 // --- COMPONENTE "PROJETOS" ---
 const Projects = () => {
   const projectData = [
+    {
+      title: 'Sistema de Achados e Perdidos',
+      description: 'Local-Host é uma aplicação web para gestão de achados e perdidos em instituições, ajudando alunos a encontrar seus itens perdidos possui autenticação e níveis de acesso. Fui responsável pelo front-end, desenvolvido em React, utilizando o Claude Design como apoio na criação das interfaces, com foco em acessibilidade: VLibras, alto contraste, temas claro/escuro e ajuste de fonte.',
+      tags: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'Acessibilidade', 'VLibras'],
+      githubUrl: 'https://github.com/Welberth77/Sistema-Achados-e-Perdidos',
+      imageUrl: AchadosPerdidosImage
+    },
     {
       title: 'MeteorFall',
       description: 'Projeto desenvolvido durante o hackathon NASA Space Apps: criamos um site que simula o impacto de meteoros na Terra usando dados reais da NASA. A aplicação estima danos potenciais, calcula o número de pessoas afetadas com base na densidade populacional e mostra o impacto em qualquer região do planeta.',

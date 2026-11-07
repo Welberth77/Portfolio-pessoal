@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react'; // <-- LINHA ADICIONADA
+import { Github, Linkedin, Mail } from 'lucide-react';
 import fotoPerfil from '../images/foto-perfil.jpg';
 
 // --- COMPONENTE DO HERO (INÍCIO) ---
@@ -64,4 +64,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; // <-- Provavelmente você também adicionou isso
+export default Hero;
