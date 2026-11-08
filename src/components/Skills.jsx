@@ -5,12 +5,12 @@ const skillCategories = [
   {
     title: 'Front-end',
     icon: Monitor,
-    skills: ['React', 'JavaScript', 'Tailwind', 'HTML5', 'CSS3', 'Bootstrap', 'Figma'],
+    skills: ['React', 'JavaScript', 'Tailwind', 'HTML5', 'CSS3'],
   },
   {
     title: 'Back-end',
     icon: Server,
-    skills: ['Node.js', 'Express', 'Python', 'Flask', 'Java', 'JWT'],
+    skills: ['Node.js', 'Python', 'Flask', 'Java'],
   },
   {
     title: 'Dados',

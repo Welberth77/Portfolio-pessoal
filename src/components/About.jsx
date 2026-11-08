@@ -8,8 +8,8 @@ const About = () => {
           <h2 className="section-title">Quem está por trás do código</h2>
           <div className="facts">
             <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Ciência da Computação · 8º período</div>
-            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Desenvolvedor full stack</div>
-            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Aberto a novos desafios</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Front-end com base full stack</div>
+            <div className="fact"><span className="fact-dot" aria-hidden="true"></span> Projetos web, APIs e jogos</div>
           </div>
         </div>
 
@@ -23,7 +23,6 @@ const About = () => {
             Durante a jornada, descobri que programar vai muito além do código. Gosto de aprender coisas
             novas e me desafiar: cada projeto, mesmo pequeno, me ensina algo.
           </p>
-          <p>Estou sempre em busca de novos desafios e aberto a novas conexões.</p>
         </div>
       </div>
     </section>
